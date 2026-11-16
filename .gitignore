@@ -31,7 +31,11 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+/backend/.venv/
+__pycache__/
+.pytest_cache/
 
 # typescript
 *.tsbuildinfo
@@ -39,3 +43,22 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Dependencies and build files
+node_modules/
+.venv/
+__pycache__/
+.expo/
+dist/
+coverage/
+
+# Temporary exports and backups
+.sherail-mobile-export-ios-final/
+.sherail-mobile-export-ios/
+App_backup.js
